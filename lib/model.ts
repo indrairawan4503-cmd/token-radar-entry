@@ -358,11 +358,13 @@ export function buildBoard(snapshot: Snapshot, model: ModelConstants = MODEL): B
     age_days: s.age,
     implied_value_usd: s.implied,
     model: {
-      category_multiple: round4(s.categoryMultiple),
-      chain_multiplier: round4(s.chainMult),
+      // Full precision, not rounded: the dashboard recomputes the row from these same
+      // figures, and a rounded multiple would make its number differ from the board's.
+      category_multiple: s.categoryMultiple,
+      chain_multiplier: s.chainMult,
       growth_pct: s.growthPct,
-      growth_multiplier: round4(s.growthMult),
-      maturity_multiplier: round4(s.maturityMult),
+      growth_multiplier: s.growthMult,
+      maturity_multiplier: s.maturityMult,
       age_days: s.age,
     },
     farm_steps: farmSteps(s.p, s.age).map(stepText),
