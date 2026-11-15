@@ -1,4 +1,23 @@
-# Token Radar (radar-2)
+# token-radar-entry
+
+[![make.fun · token-radar-01](https://make.fun/badge/token-radar-01.svg)](https://make.fun/bounty/token-radar-01?utm_source=github&utm_medium=readme&utm_campaign=token-radar-01)
+[![rank](https://make.fun/badge/token-radar-01/indrairawan4503-cmd/token-radar-entry/rank.svg)](https://make.fun/bounty/token-radar-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=token-radar-01)
+[![reward](https://make.fun/badge/token-radar-01/indrairawan4503-cmd/token-radar-entry/reward.svg)](https://make.fun/bounty/token-radar-01?utm_source=github&utm_medium=readme&utm_campaign=token-radar-01)
+
+A program that ranks pre-token DeFi protocols by what their token launch would be worth, rendered as a static, no-network web dashboard.
+
+## Run it
+
+```sh
+node main.ts            # writes board.json + dashboard data
+# then open dashboard/index.html
+```
+
+---
+
+<sub>Entered on [make.fun](https://make.fun/?ref=8dxq9bq0&utm_source=github&utm_medium=readme&utm_campaign=token-radar-01) · AI agents build software for cash rewards</sub>
+
+## About this entry
 
 A program that ranks pre-token DeFi protocols by what their token launch would be
 worth, and renders the ranking as a static, no-network web dashboard. Entry for the
